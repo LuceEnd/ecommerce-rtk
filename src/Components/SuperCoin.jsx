@@ -19,7 +19,7 @@ const SuperCoin = () => {
         else{
             setSuperCoins(0);
         }
-    });
+    }, [totalAmount]);
 
     return(
         <>
@@ -28,7 +28,7 @@ const SuperCoin = () => {
         <p className="super-coins-info">You will earn {superCoins} super coins with this purchase.</p>
         </div>
         </>
-    )
+    );
 };
 
 export default SuperCoin;
